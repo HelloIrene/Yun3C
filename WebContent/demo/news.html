@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<head>
+<title>News</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+            <div class="account_desc">
+				<ul>
+						<li><a href="#">你好，欢迎来到电子在线商城！</a></li>
+					<li><a href="login.html">欢迎登录</a></li>
+					<li><a href="reg.html">注册</a></li>
+				
+				</ul>
+			</div>
+			<div class="clear"></div>
+			  <div class="cart">
+			  	   <p>您的购物车共有<span>0</span>件商品 共<span>189</span>元
+                    <div id="dd" class="wrapper-dropdown-2">
+			  	   	<ul class="dropdown">
+							<li>你有<a href="#">20</a>件商品在购物车内</li>
+					</ul>
+                    </div>
+                    </p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    <li class="active"><a href="index.html">首页</a></li>
+			    	<li><a href="product-hot.html">最近热卖</a></li>
+			    	<li><a href="product.html">精品推荐</a></li>
+			    	<li><a href="news.html">公司新闻</a></li>
+			    	<li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">在线留言</a></li>
+                    <li><a href="delivery.html">顾客问答</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    	<div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="images/newsimg1.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>市长汪泉视察太湖云电商</h3>
+					<h4>2014-09-19 </h4>
+					<p>9月19日上午，无锡市委副书记、市长汪泉一行来到太湖云电商参观考察，太湖云电商总裁张凌陪同并做工作汇报。张凌详细汇报了电子在线商城平台4-9月份的发展情况：自3月28日电子在线商城全面升级上线以来，0元购6蛋、1元秒6罐可乐等活动劲爆锡城；盛夏畅饮、开学零嘴等热门专题火热抱团；金牌特产风靡网络，阳山水蜜桃售出4076份更是创下触网营销新战绩；农产品O2O试水活动反响热烈，2000份马山鸡蛋瞬时被抢购一空，平均2分钟售出一份；微博、微信、手机客户端等多平台聚攒人气……电子在线商城的活跃度和参与度都已位居区域电商平台前列。
+					 <a href="news-content.html" title="more">[....]</a></p>
+			   </div>
+		   </div>	
+		   <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="images/newsimg2.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>揭秘平台，玩转电商 </h3>
+					<h4>2014年8月18日 </h4>
+					<p>8月14日下午，“电子在线行天下——玩转电商平台之1号店篇”交流会在无锡国际饭店举行！市电子商务协会秘书长张凌、1号店相关负责人等出席并发言。 <a href="news-content.html" title="more">[....]</a></p>
+			   </div>
+		   </div>
+		   <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="images/newsimg3.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>无锡市滨湖区高佩区长一行莅临云电商考察</h3>
+					<h4>2014-09-19</h4>
+					
+					<p>
+
+7月4日下午，无锡市滨湖区高佩区长一行莅临太湖云电商考察访问，公司总经理张凌等人陪同。
+
+高区长等人参观了山水城电商产业园展厅，认真听取了园区发展现状的介绍，对园区积极推进的青年电商创业孵化项目给予了充分肯定，指出该项目将为无锡市电子商务产业的发展提供人才保障。
+
+在随后的座谈会上，张凌总经理详细介绍了电子在线商城的发展历程、现状等，高区长肯定了电子在线商城近期开展的“0元购、1元秒”等活动火爆锡城，认为电子在线商城的影响力日益增强，鼓励电子在线商城继续做大做强，成为地方特色电商平台。
+ <a href="news-content.html" title="more">[....]</a></p>
+			   </div>
+		   </div>
+           <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="images/newsimg1.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>市长汪泉视察太湖云电商</h3>
+					<h4>2014-09-19 </h4>
+					<p>9月19日上午，无锡市委副书记、市长汪泉一行来到太湖云电商参观考察，太湖云电商总裁张凌陪同并做工作汇报。张凌详细汇报了电子在线商城平台4-9月份的发展情况：自3月28日电子在线商城全面升级上线以来，0元购6蛋、1元秒6罐可乐等活动劲爆锡城；盛夏畅饮、开学零嘴等热门专题火热抱团；金牌特产风靡网络，阳山水蜜桃售出4076份更是创下触网营销新战绩；农产品O2O试水活动反响热烈，2000份马山鸡蛋瞬时被抢购一空，平均2分钟售出一份；微博、微信、手机客户端等多平台聚攒人气……电子在线商城的活跃度和参与度都已位居区域电商平台前列。
+					 <a href="news-content.html" title="more">[....]</a></p>
+			   </div>
+		   </div>
+           <div class="image group">
+				<div class="grid images_3_of_1">
+					<img src="images/newsimg1.jpg" alt="" />
+				</div>
+				<div class="grid news_desc">
+					<h3>市长汪泉视察太湖云电商</h3>
+					<h4>2014-09-19 </h4>
+					<p>9月19日上午，无锡市委副书记、市长汪泉一行来到太湖云电商参观考察，太湖云电商总裁张凌陪同并做工作汇报。张凌详细汇报了电子在线商城平台4-9月份的发展情况：自3月28日电子在线商城全面升级上线以来，0元购6蛋、1元秒6罐可乐等活动劲爆锡城；盛夏畅饮、开学零嘴等热门专题火热抱团；金牌特产风靡网络，阳山水蜜桃售出4076份更是创下触网营销新战绩；农产品O2O试水活动反响热烈，2000份马山鸡蛋瞬时被抢购一空，平均2分钟售出一份；微博、微信、手机客户端等多平台聚攒人气……电子在线商城的活跃度和参与度都已位居区域电商平台前列。
+					 <a href="news-content.html" title="more">[....]</a></p>
+			   </div>
+		   </div>
+		   <div class="content-pagenation">
+						<li><a href="#">第一页</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><span>....</span></li>
+						<li><a href="#">最后页</a></li>
+						<div class="clear"> </div>
+					</div>	
+         </div> 
+    </div>
+ </div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>购物指南</h4>
+						<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">大家电</a></li>
+						<li><a href="#">联系客服</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>配送方式</h4>
+						<ul>
+						<li><a href="about.html">上门自提</a></li>
+						<li><a href="contact.html">211限时达</a></li>
+						<li><a href="#">配送服务查询</a></li>
+						<li><a href="contact.html">配送费收取标准</a></li>
+						<li><a href="#">海外配送</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>特色服务</h4>
+						<ul>
+							<li><a href="contact.html">售后政策</a></li>
+							<li><a href="index.html">查看购物车</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换货</a></li>
+							<li><a href="contact.html">取消订单</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>联系我们</h4>
+						<ul>
+							<li><span>0510-86543220</span></li>
+							<li><span>0510-86543870</span></li>
+                           
+							
+						</ul>
+						<div class="social-icons">
+							<h4>Follow Us</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		   </div>
+    </div>
+   <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+

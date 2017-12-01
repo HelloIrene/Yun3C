@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<head>
+<title>关于我们</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+            <div class="account_desc">
+				<ul>
+						<li><a href="#">你好，欢迎来到电子在线商城！</a></li>
+					<li><a href="login.html">欢迎登录</a></li>
+					<li><a href="reg.html">注册</a></li>
+				
+				</ul>
+			</div>
+			<div class="clear"></div>
+			  <div class="cart">
+			  	   <p>您的购物车共有<span>0</span>件商品 共<span>189</span>元
+                    <div id="dd" class="wrapper-dropdown-2">
+			  	   	<ul class="dropdown">
+							<li>你有<a href="#">20</a>件商品在购物车内</li>
+					</ul>
+                    </div>
+                    </p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    	<li class="active"><a href="index.html">首页</a></li>
+			    	<li><a href="product-hot.html">最近热卖</a></li>
+			    	<li><a href="product.html">精品推荐</a></li>
+			    	<li><a href="news.html">公司新闻</a></li>
+			    	<li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">在线留言</a></li>
+                    <li><a href="delivery.html">顾客问答</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    	<div class="section group">
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>开发团队</h3>
+					<img src="images/about_img.jpg" alt="">
+					<p> Jheng Cloud是由商务局指定独立运营“电子在线商城上行”综合性网上商城的第三方运营公司。平台可实现会员自主交易，商家自主开店功能。它在无锡市政府组织下，精选300家天猫店、100家传统商贸企业、1万种优质电子在线产品上线，为消费者选购“无锡精品”、为无锡品牌商家网上销售提供官方平台。</p>
+					<p>宗旨
+以“促消费、扩内需、调结构、稳增长”为目标，按照“政府搭台、企业唱戏”的原则，依托电子在线品牌和服务优势，通过统一组织、统一标识、统一宣传、统一行动，开展“电子在线商城上行”活动，拟与淘宝、天猫商城、当当网等国内主流电商平台官方合作，推出无锡本地品牌企业和商家。
+				</p>
+				</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>网站历史</h3>
+				 <div class="history-desc">
+					<div class="year"><p>2013年5月17日</p></div>
+					<p class="history">  举办“电子在线商城上行”活动推介会。 </p>
+				 <div class="clear"></div>
+				</div>
+				 <div class="history-desc">
+					<div class="year"><p>2013年6月18日</p></div>
+					<p class="history">  举行“电子在线商城上行”官方网站上线发布会。 </p>
+				 <div class="clear"></div>
+				</div>
+				 <div class="history-desc">
+					<div class="year"><p>2013年8月28日</p></div>
+					<p class="history">  电子在线商城上行II期上线完善交易环节。 </p>
+				 <div class="clear"></div>
+				</div>
+				 <div class="history-desc">
+					<div class="year"><p> 2013年9月28日 </p></div>
+					<p class="history">中信银行联合电子在线商城上行推出二维码异度支付，O2O消费体验升级。 </p>
+				 <div class="clear"></div>
+				</div>
+				<div class="history-desc">
+					<div class="year"><p>2013年10月28日 </p></div>
+					<p class="history"> 100家无锡老字号、地方名特优产品、外贸品牌企业入驻“电子在线商城上行”平台。</p>
+				 <div class="clear"></div>
+				</div>
+                <div class="history-desc">
+					<div class="year"><p> 2014年5月23日  </p></div>
+					<p class="history"> 无锡电商建设三年计划顺利通过审核，电子在线商城成为无锡市政府重点打造的电商平台。 </p>
+				 <div class="clear"></div>
+				</div>
+			</div>
+				<div class="col_1_of_3 span_1_of_3">
+					<h3>媒体报道</h3>
+					<p>电子在线商城上线各方媒体支持</p>
+				    <div class="list">
+					     <ul>
+					     	<li><a href="#">太湖明珠网</a></li>
+					     	<li><a href="#">新华报业网</a></li>
+					     	<li><a href="#">新浪网</a></li>
+					     	<li><a href="#">搜房网</a></li>
+					     	<li><a href="#">人民网</a></li>
+					        <li><a href="#">太湖明珠网</a></li>
+					     	<li><a href="#">新华报业网</a></li>
+					     	<li><a href="#">新浪网</a></li>
+					     	<li><a href="#">搜房网</a></li>
+					     	<li><a href="#">人民网</a></li>
+					     </ul>
+					 </div>
+					 <p>「电子在线商城」是一个集中展示电子在线形象、推介电子在线商城店的大型导购平台。它在政府的组织下，精选了300家天猫店、100家传统商贸企业、1万种优质电子在线产品上线，是消费者选购“无锡精品”、无锡品牌商家网上销售的官方平台。 </p>
+				</div>
+			</div>			
+    </div>
+ </div>
+</div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>购物指南</h4>
+						<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">大家电</a></li>
+						<li><a href="#">联系客服</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>配送方式</h4>
+						<ul>
+						<li><a href="about.html">上门自提</a></li>
+						<li><a href="contact.html">211限时达</a></li>
+						<li><a href="#">配送服务查询</a></li>
+						<li><a href="contact.html">配送费收取标准</a></li>
+						<li><a href="#">海外配送</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>特色服务</h4>
+						<ul>
+							<li><a href="contact.html">售后政策</a></li>
+							<li><a href="index.html">查看购物车</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换货</a></li>
+							<li><a href="contact.html">取消订单</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>联系我们</h4>
+						<ul>
+							<li><span>8888-88888888</span></li>
+							<li><span>8888-88888888</span></li>
+                           
+							
+						</ul>
+						<div class="social-icons">
+							<h4>Follow Us</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		   </div>
+    </div>
+   <script type="text/javascript">
+		$(document).ready(function() {			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<head>
+<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+            
+              <div class="account_desc">
+		    <img src="images/cart2.gif" width="550" height="46"></div>
+			<div class="clear"></div>
+			
+  </div>
+		     
+	
+   </div>
+ <div class="main">
+    	<div class="order">
+            <div class="order-menu">
+            	<div class="title-items">
+                    <h2>填写并核对信息</h2>
+                    <div class="r">
+                    <span class="excel-export"> <a id="export" href="index.html">返回购物<i class="icons"></i></a></span>
+                    </div>
+                    <b class="line" data-line="一条横线"></b>
+                </div>
+                <!----step1---> 
+                <div class="step-1">
+                	<h2>收货人信息</h2>
+                    <form>
+                    <div class="oldintro newadd"><input id="new_address" type="radio" name="new_address"><label for="new_address"> 使用新地址</label></div>
+                    <span id="exceed_max_address_notice" style="display:none">当前地址数量已达上限，若要继续添加新地址，请先删除部分收货地址。</span>
+                    <table class="tab1" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tbody>
+						<tr id="new_name">
+							<td align="right" width="10%"><span class="pink">*</span>收货人：</td>
+                            <td width="90%"><input id="ship_name" class="inp w138" type="text" onblur="check_shipping('name')">
+                            <span id="new_name_error"></span>
+                            </td>
+						</tr>
+                        <tr>
+                        <td align="right"><span class="pink">*</span> 所在地区：</td>
+						<td id="address_area">
+						<span id="span_province">
+                        <select id="ship_province" name="ship_province">
+                        <option value="">请选择：</option>
+                        <option value="1">北京</option>
+                        <option value="2">上海</option>
+                        </select>
+                        </span>
+						<span id="span_city">
+						<select id="ship_city" name="ship_city">
+                        <option value="">请选择：</option>
+                        <option value="184">南京市</option>
+                        <option value="185">徐州市</option> 
+                        </select>
+						</span>
+						<span >
+                        <select id="ship_area" name="ship_area">
+                        <option value="">请选择：</option>
+                        <option value="2145">崇安区</option>
+                        <option value="2146">南长区</option>
+                        </select>
+                        </span>
+                        <span id="span_town">
+                        <select id="ship_town" onchange="check_shipping('area')" name="ship_town">
+                        <option value="">请选择：</option>
+                        <option value="13690">马山街道</option>
+                        <option value="13691">河埒街道</option>
+                        </select>
+                        </span></td>
+						</tr>
+						<tr>
+                            <td align="right">
+                            <span class="pink">*</span>
+                            详细地址：
+                            </td>
+                            <td>
+                            <span id="address_prefix"></span>
+                            <input id="ship_address_detail" class="inp w308" type="text" onblur="check_shipping('address')">
+                            <span id="new_address_error"></span>
+                            </td>
+						</tr>
+						<tr>
+							<td align="right"><span class="pink">*</span>手机号码：</td>
+                            <td>
+                            <input id="ship_mobile" class="inp w138" type="text" onblur="check_shipping('mobile')">或&nbsp;&nbsp;固定电话：
+                            <input id="ship_phone" class="inp w138" type="text" onblur="check_shipping('phone')">
+                            <span id="new_mobile_error"></span>
+                            <span id="new_phone_error"></span>
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+						<div  ><input type="submit" value="保存收货人信息"  class="myButton"></div>
+                       
+                    </form>
+                </div>
+                <!----step2--->
+                <div class="step-2">
+                	<h2>支付及配送方式</h2>
+                   <div class="in">
+					<div class="default" style="display: none;">
+						在线支付
+                        <br>
+                        普通快递 10元
+				   </div>
+                        <div class="payment" >
+                        <strong>支付方式</strong>
+                        <div class="oldintro">
+                        <input id="pay_online" type="radio" checked="" value="online" name="payway">
+                        <label for="pay_online"> 在线支付 即时到帐，支持绝大数银行借记卡及部分银行信用卡</label>
+                        </div>
+                        <strong>配送方式</strong>
+                        <div>
+                            <div class="oldintro">
+                                <input id="ship_common" type="radio" checked="" value="common" name="shipping">
+                                <label for="ship_common"> 普通快递</label>
+                                <span class="shipping_info">
+                                    运费金额：
+                                    <span class="shipping_fee">10</span>
+                                    元
+                                </span>
+                            </div>
+                        </div>
+                      <div ><input type="submit" value="保存收货人信息"  class="myButton"></div>
+                        </div>
+                    </div>
+                </div>
+                <!----step3--->
+                <div class="step-3">
+                	<h2>商品清单 <span> <a href="#">返回修改购物车</a></span></h2>
+                    <div class="clear"></div>
+                    <div id="tradeTable" class="trade-table">
+                    <table id="tradeRecordTable" >
+                                <tbody>
+                                    <tr>
+                                        <th><input name="" type="checkbox" value="">全选</th>
+                                        <th>商品</th>
+                                        <th>规格</th>
+                                        <th>单价</th>
+                                        <th>数量</th>
+                                        <th>小计</th>
+                                    </tr>
+                                    
+                                  <tr>
+                                     	<td><input name="" type="checkbox" value=""></td>
+                                        <td>
+                                        <div class="img-list">
+                                        <a class="img-box" target="_blank"  href="#">
+                                        <img class="err-product" width="50" height="50" title="" src="images/2.jpg">
+                                       
+                                        </a>
+                                         <span>AUX可摇头取暖器</span>
+                                        </div>
+                                        </td>
+                                        <td></td>
+                                        <td>¥99</td>
+                                        <td>
+                                       2
+                                    </td>
+                                        <td>¥198</td>
+                                    </tr>
+                                    
+                                 
+                                    
+                                  <tr>
+                                    	<td><input name="" type="checkbox" value=""></td>
+                                        <td>
+                                        <div class="img-list">
+                                        <a class="img-box" target="_blank"  href="#">
+                                        <img class="err-product" width="50" height="50" title="" src="images/1.jpg">
+                                        
+                                        </a>
+                                        <span>火火兔儿童早教机</span>
+                                        </div>
+                                        </td>
+                                        <td>红色-4G</td>
+                                        <td>¥165</td>
+                                        <td>1</td>
+                                        <td>¥165</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <div class="">
+                            <div class="totlePay"><span>应付总额:</span><span class="red" style="font-size:25px;">¥<span style="font-size:25px;">59</span></span></div>
+                            </div>
+                </div>
+                <!----step4----->
+                <div class="step-4">
+                	<a href="pay.html"  class="gotoSettlement" >提交订单</a>
+                    <a href="cart.html" class="ContinueToBuy">返回购物车</a>
+                    <div  class="clear"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+ <div class="clear"></div>
+   <div class="footer">
+        <div class="copy_right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		   </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context reloadable="true">
+	<Resource name="jdbc/druid" auth="Container"
+		factory="org.apache.naming.factory.BeanFactory"
+		type="com.alibaba.druid.pool.DruidDataSource"
+		maxActive="200" maxWait="10000"
+		minIdle="5" initialSize="5" validationQuery="SELECT 1"
+		username="stuY" password="geek"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://192.168.24.62:3306/yunweb"
+	/>
+</Context>

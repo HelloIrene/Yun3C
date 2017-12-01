@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<head>
+<title>Delivery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/jquery.accordion.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#posts").accordion({ 
+			header: "div.tab", 
+			alwaysOpen: false,
+			autoheight: false
+		});
+	});
+</script>
+</head>
+<body>
+  <div class="wrap">
+	<div class="header">
+		
+		<div class="header_top">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+            <div class="account_desc">
+				<ul>
+						<li><a href="#">你好，欢迎来到电子在线商城！</a></li>
+					<li><a href="login.html">欢迎登录</a></li>
+					<li><a href="reg.html">注册</a></li>
+				
+				</ul>
+			</div>
+			<div class="clear"></div>
+			  <div class="cart">
+			  	   <p>您的购物车共有<span>0</span>件商品 共<span>189</span>元
+                    <div id="dd" class="wrapper-dropdown-2">
+			  	   	<ul class="dropdown">
+							<li>你有<a href="#">20</a>件商品在购物车内</li>
+					</ul>
+                    </div>
+                    </p>
+			  </div>
+			  <script type="text/javascript">
+			function DropDown(el) {
+				this.dd = el;
+				this.initEvents();
+			}
+			DropDown.prototype = {
+				initEvents : function() {
+					var obj = this;
+
+					obj.dd.on('click', function(event){
+						$(this).toggleClass('active');
+						event.stopPropagation();
+					});	
+				}
+			}
+
+			$(function() {
+
+				var dd = new DropDown( $('#dd') );
+
+				$(document).click(function() {
+					// all dropdowns
+					$('.wrapper-dropdown-2').removeClass('active');
+				});
+
+			});
+
+		</script>
+	 <div class="clear"></div>
+  </div>
+	<div class="header_bottom">
+	     	<div class="menu">
+	     		<ul>
+			    	<li class="active"><a href="index.html">首页</a></li>
+			    	<li><a href="product-hot.html">最近热卖</a></li>
+			    	<li><a href="product.html">精品推荐</a></li>
+			    	<li><a href="news.html">公司新闻</a></li>
+			    	<li><a href="about.html">关于我们</a></li>
+                    <li><a href="contact.html">在线留言</a></li>
+                    <li><a href="delivery.html">顾客问答</a></li>
+			    	<div class="clear"></div>
+     			</ul>
+	     	</div>
+	     	<div class="search_box">
+	     		<form>
+	     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+	     		</form>
+	     	</div>
+	     	<div class="clear"></div>
+	     </div>	     	
+   </div>
+ <div class="main">
+    <div class="content">
+    		
+		<div class="faqs">
+    	  <h2>顾客问答</h2>	          	
+            <div id="posts">
+			    <div class="tab bar">
+                    <h4 class="post-title">Q：在我们的团购秒杀活动中经常会出现限制每个ID购一件的条件，那什么是ID呢？</h4>
+                </div>
+			    <div class="panel margin-lr-7">
+            		<p> A：正常情况下，我们电子在线商城对于ID 的默认解释是：当你注册一个账号后，这个账号ID只能对应一个用户名、一个手机号码，（即，不同的用户名不能共用一个手机号码，否则订单无效）。 </p>
+			    </div>		   
+                <div class="tab bar">
+                     <h4 class="post-title"> Q：如何评估订单是否有效？</h4>
+                </div>
+				<div class="panel margin-lr-7">
+	        		 <p>A：参加活动的产品如有要求每个ID限购指定的数量，超出的订单即为无效。假如有利用网站漏洞进行刷单的用户，电子在线商城有权利判定其订单无效。如果主动向电子在线商城指出漏洞问题的用户，电子在线商城将会给予一定的奖励。</p>
+                </div>
+                <!--<div class="tab bar">
+                     <h4 class="post-title"> Q：登录电子在线商城总是无法链接，这是怎么回事？</h4>
+                </div>
+				<div class="panel margin-lr-7">
+	        		 <p> A：出现这种问题时，请您先刷新一下；或者检查一下网络是否正常，能否登录其它网站，如果以上两种方式都无效，那么还有两种情况：
+
+    a． 我们的网站正在更新，请您耐心等待；
+
+    b． 我们的网站被黑客恶意攻击，正在抢修中，请您谅解。</p>
+    			</div>
+				<div class="tab bar">
+                    <h4 class="post-title"> Q：电子在线商城常用付款方式有哪些？</h4>
+            	</div>
+			 	<div class="panel margin-lr-7">
+	        		<p>A：您可以使用电子在线卡、支付宝、预存款、银联支付，也可使用农业银行、交通银行网上银行支付。电子在线卡只能在指定区域使用。</p>
+             	</div>
+                  <div class="tab bar">
+                    <h4 class="post-title">Q：如何取消订单？</h4>
+                </div>
+			    <div class="panel margin-lr-7">
+	        	     <p>A：您可以进入"我的商城—我的订单"自行操作订单取消或者如订单已进入配送环节不确保能够拦截成功，配送上门时 您可以选择退货，并及时与客服联系。</p>
+                </div>
+                <div class="tab bar">
+                    <h4 class="post-title"> Q：订单取消后，什么时候退款？</h4>
+            	</div>
+				<div class="panel margin-lr-7">
+                      <p>A：已支付成功的订单，取消成功之后，请及时与客服联系，我们将在第一时间为您退款。</p>
+                </div>
+                <div class="tab bar">
+                    <h4 class="post-title"> Q：订单取消了，还想要，能不能再配送过来？</h4>
+            	</div>
+				<div class="panel margin-lr-7">
+	        	     <p>A：非常抱歉，订单一旦取消将无法恢复，建议您重新下单购买。</p>
+                </div>
+                <div class="tab bar">
+                    <h4 class="post-title">Q：怎么查看退款？</h4>
+            	</div>
+				<div class="panel margin-lr-7">
+	        	     <p>A：我们会将退款打到你账号的“预存款”中，查看时请点击“我的商城——设置——预存款明细”查看退款明细。如是电子在线卡下单的，则将退款到您的电子在线卡余额中。</p>
+                </div>
+                <div class="tab bar">
+                    <h4 class="post-title"> Q：怎么使用预存款支付？</h4>
+            	</div>
+				<div class="panel margin-lr-7">
+                      <p>A：在支付的时候勾选“使用预存款支付”即可。支付完成之后可以在“我的商城——设置——预存款明细”中查看余额与支出信息。</p>
+                </div>
+                <div class="tab bar">
+                    <h4 class="post-title">Q： 怎么使用预存款提现？</h4>
+            	</div>
+				<div class="panel margin-lr-7">
+	        	     <p>A：退款完成之后可以在“我的商城——设置——预存款提现”中选择操作。</p>
+                </div>-->
+		       </div>
+		      </div>	
+              <div class="content-pagenation">
+						<li><a href="#">第一页</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><span>....</span></li>
+						<li><a href="#">最后页</a></li>
+						<div class="clear"> </div>
+					</div>
+         </div> 
+    </div>
+ </div>
+   <div class="footer">
+   	  <div class="wrap">	
+	     <div class="section group">
+				<div class="col_1_of_4 span_1_of_4">
+						<h4>购物指南</h4>
+						<ul>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">会员介绍</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">大家电</a></li>
+						<li><a href="#">联系客服</a></li>
+						</ul>
+					</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>配送方式</h4>
+						<ul>
+						<li><a href="about.html">上门自提</a></li>
+						<li><a href="contact.html">211限时达</a></li>
+						<li><a href="#">配送服务查询</a></li>
+						<li><a href="contact.html">配送费收取标准</a></li>
+						<li><a href="#">海外配送</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>特色服务</h4>
+						<ul>
+							<li><a href="contact.html">售后政策</a></li>
+							<li><a href="index.html">查看购物车</a></li>
+							<li><a href="#">退款说明</a></li>
+							<li><a href="#">返修/退换货</a></li>
+							<li><a href="contact.html">取消订单</a></li>
+						</ul>
+				</div>
+				<div class="col_1_of_4 span_1_of_4">
+					<h4>联系我们</h4>
+						<ul>
+							<li><span>0510-86543220</span></li>
+							<li><span>0510-86543870</span></li>
+                           
+							
+						</ul>
+						<div class="social-icons">
+							<h4>Follow Us</h4>
+					   		  <ul>
+							      <li><a href="#" target="_blank"><img src="images/facebook.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/twitter.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"><img src="images/skype.png" alt="" /> </a></li>
+							      <li><a href="#" target="_blank"> <img src="images/dribbble.png" alt="" /></a></li>
+							      <li><a href="#" target="_blank"> <img src="images/linkedin.png" alt="" /></a></li>
+							      <div class="clear"></div>
+						     </ul>
+   	 					</div>
+				</div>
+			</div>			
+        </div>
+        <div class="copy_right">
+				<p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		   </div>
+    </div>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+    <a href="#" id="toTop"><span id="toTopHover"> </span></a>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
